@@ -45,8 +45,8 @@
     <form method="POST" action="/">
         <div class="filters">
             <div>
-                <label for="query">Ticker:</label>
-                <input type="text" id="query" name="query" placeholder="e.g. AAPL" value="{{ query }}">
+                <label for="ticker">Ticker:</label>
+                <input type="text" id="ticker" name="ticker" placeholder="e.g. AAPL" value="{{ ticker }}">
             </div>
             <div>
                 <label>Sentiment:</label>
@@ -75,6 +75,7 @@
                 <h3>{{ post.ticker }} - {{ post.company_name }}</h3>
                 <p><span class="label">Text:</span> {{ post.text }}</p>
                 <p><span class="label">Sentiment:</span> {{ post.sentiment }}</p>
+                <p><span class="label">Tickers:</span> {{ post.tickers }}</p>
                 <p><span class="label">Popularity:</span> {{ post.popularity }}</p>
             </div>
             {% endfor %}
