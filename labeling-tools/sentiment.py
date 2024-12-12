@@ -6,6 +6,7 @@ import pandas as pd
 import json
 
 INPUT_FILE = 'data/raw-data/data1.json'
+OUTPUT_FILE = 'data/labeled-data/example.json'
 
 class FinancialSentimentAnalyzer:
     def __init__(self):
@@ -98,7 +99,7 @@ def calculate_popularity_score(favorite_count, quote_count, reply_count, retweet
   return score
 
 def jsondump(results):
-    with open('output_results.json', 'w') as json_file:
+    with open(OUTPUT_FILE, 'w') as json_file:
         json.dump(results, json_file, indent=4)
 
 if __name__ == "__main__":
