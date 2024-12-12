@@ -26,8 +26,11 @@ social-media-stock-analyzer/
 │   ├── raw-data/            # Raw, unprocessed data
 ├── labeling-tools/
 │   ├── post-labeling-tool.py    # Tool for manual data labeling
-│   ├── sentiment.py             # Sentiment labeling utility
+│   ├── sentiment.py             # Tool for automatic data labeling
 ├── sentiment-analysis-model/    # Code and resources for training the sentiment analysis model
+│   ├── classifier.py/           # HTML templates for the web app
+│   ├── model.py/                # Naive Bayes Classifier
+│   ├── tickers.json/            # Defined tickers to scrape from data
 ├── social-media-crawler/
 │   ├── twitter_scraper.py       # Script to scrape data from Twitter
 ├── web-application/
@@ -44,16 +47,11 @@ Follow these steps to set up the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/social-media-stock-analyzer.git
+   git clone https://github.com/akshadpai/social-media-stock-analyzer.git
    cd social-media-stock-analyzer
-   ```
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+2. Define input and output files in the top of each file to specify data
    ```
-
-3. Set up the database or any required environment variables (if applicable).
 
 ---
 
