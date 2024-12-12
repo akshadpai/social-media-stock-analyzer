@@ -29,7 +29,7 @@ social-media-stock-analyzer/
 │   ├── post-labeling-tool.py    # Tool for manual data labeling
 │   ├── sentiment.py             # Tool for automatic data labeling
 ├── sentiment-analysis-model/    # Code and resources for training the sentiment analysis model
-│   ├── classifier.py/           # HTML templates for the web app
+│   ├── classifier.py/           # Uses training data to train model and classify raw data
 │   ├── model.py/                # Naive Bayes Classifier
 │   ├── tickers.json/            # Defined tickers to scrape from data
 ├── social-media-crawler/
