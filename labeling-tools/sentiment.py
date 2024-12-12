@@ -5,6 +5,8 @@ from pathlib import Path
 import pandas as pd
 import json
 
+INPUT_FILE = 'data/raw-data/data1.json'
+
 class FinancialSentimentAnalyzer:
     def __init__(self):
         """
@@ -76,7 +78,7 @@ def analyze_tweets(tweets, popularity):
         sentiment_result = analyzer.analyze_sentiment(tweet)
         
         results.append({
-            "tweet": tweets[index],
+            "text": tweets[index],
             "sentiment": sentiment_result["sentiment"],
             "confidence_scores": sentiment_result["confidence_scores"],
             "popularity": popularity[index]
@@ -100,11 +102,11 @@ def jsondump(results):
         json.dump(results, json_file, indent=4)
 
 if __name__ == "__main__":
-    tweet_results, popularity_results = read_tweets_from_file("sentimentdata.json")
+    tweet_results, popularity_results = read_tweets_from_file(INPUT_FILE)
     analyze_tweet_results = analyze_tweets(tweet_results, popularity_results)
 
     for result in analyze_tweet_results:
-        print(f"\nTweet: {result['tweet']}")
+        print(f"\nTweet: {result['text']}")
         print(f"Sentiment: {result['sentiment']}")
         print("Confidence Scores:")
         for sentiment, score in result['confidence_scores'].items():

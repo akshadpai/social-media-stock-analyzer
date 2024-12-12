@@ -1,6 +1,6 @@
 import json
 
-INPUT_FILE_PATH = 'labeled_data.json'
+INPUT_FILE_PATH = 'data/classified/data3.json'
 
 class DataManager:
     def __init__(self):
@@ -36,7 +36,7 @@ class DataManager:
 
         # Sort by popularity
         if sort_by_popularity:
-            reverse = sort_by_popularity.lower() == "desc"  # Sort descending if "desc"
+            reverse = sort_by_popularity.lower() == "popularity desc"  # Sort descending if "desc"
             filtered_data = sorted(
                 filtered_data, key=lambda x: x.get("popularity", 0), reverse=reverse
             )

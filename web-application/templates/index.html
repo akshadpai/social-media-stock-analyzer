@@ -54,13 +54,15 @@
                     <option value="" {% if sentiment_filter == '' %}selected{% endif %}>All</option>
                     <option value="bullish" {% if sentiment_filter == 'bullish' %}selected{% endif %}>Bullish</option>
                     <option value="bearish" {% if sentiment_filter == 'bearish' %}selected{% endif %}>Bearish</option>
+                    <option value="neutral" {% if sentiment_filter == 'neutral' %}selected{% endif %}>Neutral</option>
                 </select>
             </div>
             <div>
                 <label>Sort By:</label>
                 <select name="sort">
                     <option value="" {% if sort_option == '' %}selected{% endif %}>None</option>
-                    <option value="popularity" {% if sort_option == 'popularity' %}selected{% endif %}>Popularity</option>
+                    <option value="popularity desc" {% if sort_option == 'popularity desc' %}selected{% endif %}>Popularity DESC</option>
+                    <option value="popularity asc" {% if sort_option == 'popularity asc' %}selected{% endif %}>Popularity ASC</option>
                 </select>
             </div>
         </div>

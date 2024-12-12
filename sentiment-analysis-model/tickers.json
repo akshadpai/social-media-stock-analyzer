@@ -1,0 +1,21 @@
+{
+  "AAPL" : "AAPL",
+  "Apple" : "AAPL",
+  "Tesla" : "TSLA",
+  "TSLA" : "TSLA",
+  "GME" : "GME",
+  "Gamestop": "GME",
+  "SPY": "SPY",
+  "palo alto": "PANW",
+  "PANW" : "PANW",
+  "META" : "META",
+  "facebook": "META",
+  "goog" : "GOOG",
+  "google": "goog",
+  "amzn": "AMZN",
+  "amazon": "amzn",
+  "walmart": "WMT",
+  "wmt": "wmt",
+  "intc": "INTC",
+  "intel": "INTC"
+}

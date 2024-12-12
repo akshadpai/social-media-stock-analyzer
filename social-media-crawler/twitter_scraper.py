@@ -140,7 +140,7 @@ def store_to_file(data, file_path):
 
 
 if __name__ == '__main__':
-    file_path = '../raw-data/data3.json'
+    file_path = 'data/raw-data/data4.json'
 
     ########## Log in to your Twitter/X account and then get cookie and csrf_token from Network tab in Chrome developer tools. ##########
     ########## Make sure to also aware of rate limit. When it happens, we need to switch to new account. ##########
@@ -151,14 +151,14 @@ if __name__ == '__main__':
 
     terms_to_search = [
         "GOOG",
-        "SPY",
-        "MSFT",
-        "INTC",
-        "XOM",
-        "LULU",
-        "BAC",
-        "JPM",
-        "RBLX"
+        # "SPY",
+        # "MSFT",
+        # "INTC",
+        # "XOM",
+        # "LULU",
+        # "BAC",
+        # "JPM",
+        # "RBLX"
     ]
 
     for term in terms_to_search:

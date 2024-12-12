@@ -41,7 +41,7 @@ class NaiveBayesClassifier:
         score = log(self.category_weights[category])
         ngram_counts = dict(Counter(ngrams))
         for ngram in ngram_counts:
-            score += ngram_counts[ngram] * log(self.word_distributions[category][ngram])
+            score += ngram_counts[ngram] * log(self.word_distributions[category].get(ngram, 2.71))
         return score
 
     def train(self, document_list, label_list):
