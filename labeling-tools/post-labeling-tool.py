@@ -3,6 +3,11 @@ import json
 INPUT_FILE_PATH = 'data/raw-data/data2.json'
 OUTPUT_FILE_PATH = 'data/labeled-data/data2.json'
 
+"""
+The following script allows for a guided
+manual categorization of the documents.
+"""
+
 def get_popularity(favorite_count, reply_count, retweet_count):
     return favorite_count + 2 * reply_count + 3 * retweet_count
 

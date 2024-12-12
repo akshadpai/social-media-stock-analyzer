@@ -145,20 +145,20 @@ if __name__ == '__main__':
     ########## Log in to your Twitter/X account and then get cookie and csrf_token from Network tab in Chrome developer tools. ##########
     ########## Make sure to also aware of rate limit. When it happens, we need to switch to new account. ##########
     scraper = TwitterScraper(
-        cookie='night_mode=2; gt=1866340240480190884; g_state={"i_l":0}; kdt=ubxMI1pGtWMqRxxuJhbm4hWFC8FMpoZbJBv1qxwf; lang=en; dnt=1; guest_id=v1%3A173380542983509091; guest_id_marketing=v1%3A173380542983509091; guest_id_ads=v1%3A173380542983509091; auth_token=79cbb0cae8d3e8e8e9dbb527648ae3b09ec8b7ee; ct0=b771f7e4a21846c4571f4c48c6f292f5deabdd407e575cd038700d7e8d8f74c240eae846cca6865fc27bc2a2cbc050826c67ed65da8de1c501a53ff8449c7dd3a3aadbb7e53d22417cab537eafb84128; twid=u%3D1866339486243618816; att=1-254hSuYQysjIwBSgWsm80TAwTwHDdtm6gPn5hDoq; personalization_id="v1_PRnEk/GjV+QwpInz0W6F1w=="',
-        csrf_token='b771f7e4a21846c4571f4c48c6f292f5deabdd407e575cd038700d7e8d8f74c240eae846cca6865fc27bc2a2cbc050826c67ed65da8de1c501a53ff8449c7dd3a3aadbb7e53d22417cab537eafb84128',
+        cookie='',
+        csrf_token='',
     )
 
     terms_to_search = [
         "GOOG",
-        # "SPY",
-        # "MSFT",
-        # "INTC",
-        # "XOM",
-        # "LULU",
-        # "BAC",
-        # "JPM",
-        # "RBLX"
+        "SPY",
+        "MSFT",
+        "INTC",
+        "XOM",
+        "LULU",
+        "BAC",
+        "JPM",
+        "RBLX"
     ]
 
     for term in terms_to_search:

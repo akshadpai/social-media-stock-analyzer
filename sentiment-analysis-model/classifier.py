@@ -6,6 +6,13 @@ INPUT_FILE_PATH = 'data/raw-data/data3.json'
 TICKER_FILE_PATH = 'sentiment-analysis-model/tickers.json'
 OUTPUT_FILE_PATH = 'data/labeled-data/classified/data3.json'
 
+"""
+The following script takes in the training data and
+uses the model to train. It then takes in the input file
+as raw data to classify. The ticker file is the defined ticker
+symbols and the output file can be specified.
+"""
+
 def get_popularity(favorite_count, reply_count, retweet_count):
     return favorite_count + 2 * reply_count + 3 * retweet_count
 
