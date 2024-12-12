@@ -4,10 +4,11 @@
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Project Structure](#project-structure)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Modules and Features](#modules-and-features)
-6. [Data Description](#data-description)
+3. [Quick Start](#quick-start)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Modules and Features](#modules-and-features)
+7. [Data Description](#data-description)
 ```
 ---
 
@@ -42,6 +43,15 @@ social-media-stock-analyzer/
 
 ---
 
+## Quick Start
+
+Run the following command to start the web application. Here the user can search for certain tickers, filter by sentiment, and sort by popularity. Go to local host on port 5000 to view the UI.
+```bash
+python web-application/web_app.py
+```
+
+---
+
 ## Installation
 Follow these steps to set up the project locally:
 
@@ -52,7 +62,6 @@ Follow these steps to set up the project locally:
 
 2. Define input and output files in the top of each file to specify data
    ```
-
 ---
 
 ## Usage
@@ -76,6 +85,12 @@ python labeling-tools/post-labeling-tool.py
 python labeling-tools/sentiment.py
 ```
 
+### Running the Sentiment Analysis Model
+To categorize data using our model:
+```bash
+python sentiment-analysis-model/classifier.py
+```
+
 ---
 
 ## Modules and Features
@@ -89,6 +104,7 @@ python labeling-tools/sentiment.py
 ### 3. **Sentiment Analysis Model**
    - Includes training scripts and resources for building the sentiment analysis model.
    - Implements a generative probabilistic model Naive Bayes using words, bigrams, and trigrams
+   - Category and word smoothing is used to handle zero probability words
 
 ### 4. **Social Media Crawler**
    - `twitter_scraper.py`: Fetches X social media posts for analysis.
