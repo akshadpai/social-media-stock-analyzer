@@ -15,6 +15,7 @@
 ## Introduction
 The **Social Media Stock Analyzer** project uses sentiment analysis to evaluate the impact of social media activity on stock prices. The project provides data crawling, labeling, and analysis capabilities which a user can browse using an intuitive web application.
 
+Demo: https://mediaspace.illinois.edu/media/t/1_jwrtgrdb
 ---
 
 ## Project Structure
@@ -29,7 +30,7 @@ social-media-stock-analyzer/
 │   ├── post-labeling-tool.py    # Tool for manual data labeling
 │   ├── sentiment.py             # Tool for automatic data labeling
 ├── sentiment-analysis-model/    # Code and resources for training the sentiment analysis model
-│   ├── classifier.py/           # HTML templates for the web app
+│   ├── classifier.py/           # Uses training data to train model and classify raw data
 │   ├── model.py/                # Naive Bayes Classifier
 │   ├── tickers.json/            # Defined tickers to scrape from data
 ├── social-media-crawler/
@@ -59,9 +60,23 @@ Follow these steps to set up the project locally:
    ```bash
    git clone https://github.com/akshadpai/social-media-stock-analyzer.git
    cd social-media-stock-analyzer
+   
+2. The following python packages are required to run the project.
+```
+flask
+json
+enum
+requests
+os
+collections
+transformers
+torch
+numpy
+pathlib
+pandas
+```
 
-2. Define input and output files in the top of each file to specify data
-   ```
+3. Define input and output files in the top of each file to specify data
 ---
 
 ## Usage
@@ -110,7 +125,7 @@ python sentiment-analysis-model/classifier.py
    - `twitter_scraper.py`: Fetches X social media posts for analysis.
 
 ### 5. **Web Application**
-   - Provides an interface to view and manage the data and results.
+   - Provides an interface to view the data and results.
 
 ---
 
