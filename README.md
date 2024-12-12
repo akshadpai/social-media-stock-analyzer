@@ -110,7 +110,7 @@ python sentiment-analysis-model/classifier.py
    - `twitter_scraper.py`: Fetches X social media posts for analysis.
 
 ### 5. **Web Application**
-   - Provides an interface to view and manage the data and results.
+   - Provides an interface to view the data and results.
 
 ---
 
