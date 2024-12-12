@@ -59,9 +59,23 @@ Follow these steps to set up the project locally:
    ```bash
    git clone https://github.com/akshadpai/social-media-stock-analyzer.git
    cd social-media-stock-analyzer
+   
+2. The following python packages are required to run the project.
+```
+flask
+json
+enum
+requests
+os
+collections
+transformers
+torch
+numpy
+pathlib
+pandas
+```
 
-2. Define input and output files in the top of each file to specify data
-   ```
+3. Define input and output files in the top of each file to specify data
 ---
 
 ## Usage
