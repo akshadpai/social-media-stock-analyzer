@@ -13,7 +13,7 @@
 ---
 
 ## Introduction
-The **Social Media Stock Analyzer** project uses sentiment analysis to evaluate the impact of social media activity on stock prices. The tool provides data crawling, labeling, and analysis capabilities through an intuitive web application.
+The **Social Media Stock Analyzer** project uses sentiment analysis to evaluate the impact of social media activity on stock prices. The project provides data crawling, labeling, and analysis capabilities which a user can browse using an intuitive web application.
 
 ---
 
